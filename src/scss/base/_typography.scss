@@ -1,0 +1,46 @@
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: 400;
+    color: $black;
+}
+
+/*** Headings ***/
+h1, .h1 {
+    font-size: 4.6rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.72rem;
+}
+
+h4, .h4 {
+    font-size: 1.44rem;
+}
+
+h5, .h5 {
+    font-size: 1.22rem;
+}
+
+h6, .h6 {
+    font-size: 1.1rem;
+}
+
+/*** Font Widths ***/
+.text-bold {
+    font-weight: 700;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+/*** Font Colors ***/
+
+.text-light {
+    color: $white;
+}

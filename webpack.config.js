@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -23,7 +22,7 @@ module.exports = {
 				test: /\.scss$/,
 				use: ExtractTextPlugin.extract({
 					fallback: "style-loader",
-					use: "css-loader?sourceMap!sass-loader?sourceMap"
+					use: "css-loader?sourceMap!autoprefixer-loader?browsers=last 2 versions!sass-loader?sourceMap"
 				})
 			},
 			{
@@ -41,10 +40,8 @@ module.exports = {
 				test: /\.(png|jpg|gif)$/,
 				use: [
 				  {
-					loader: 'url-loader',
-					options: {
-					  limit: 8192
-					}
+					loader: 'file-loader',
+					options: {}
 				  }
 				]
 			  }
@@ -58,10 +55,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin({
 			filename: 'styles.[hash].css'
-		}),
-		new CopyWebpackPlugin([
-            {from: __dirname + '/src/img', to: 'img'} 
-        ])
+		})
 	],
 	devtool: 'source-map',
 	devServer: {

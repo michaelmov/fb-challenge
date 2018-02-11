@@ -1,3 +1,10 @@
-h1 {
-    color: red;
-}
+@import './base/normalize',
+        './base/variables',
+        './base/layout',
+        './base/typography',
+        './base/logo';
+
+@import './partials/header',
+        './partials/navbar',
+        './partials/hero';
+

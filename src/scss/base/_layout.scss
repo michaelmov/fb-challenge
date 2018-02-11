@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    max-width: 834px;
+    padding: 0 $baseline-grid * 2;
+}
+
+.blade {
+    display: flex;
+    justify-content: center;
+}
