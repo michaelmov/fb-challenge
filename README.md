@@ -1,6 +1,6 @@
 # fb-challenge
 
-Start Dev Derver:
+Start Dev Server:
 ```
 npm install
 npm start
