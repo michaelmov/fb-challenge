@@ -1,0 +1,48 @@
+.footer {
+    padding: $baseline-grid*2 0;
+    background-color: $blue;
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+
+    &__container {
+        max-width: $wide-container-max-width;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+
+        @include breakpoint(0, $sm) {
+            justify-content: center;
+        }
+    }
+
+    &__links {
+        display: flex;
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline;
+            padding-right: $baseline-grid;
+            padding-left: $baseline-grid;
+            border-right: 1px solid $white;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: $white;
+
+                &:visited, &:active {
+                    color: $white;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+}

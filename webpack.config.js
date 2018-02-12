@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -36,15 +37,15 @@ module.exports = {
 				test: /\.html$/,
 				use: ['html-loader']
 			}, 
-			{
-				test: /\.(png|jpg|gif)$/,
-				use: [
-				  {
-					loader: 'file-loader',
-					options: {}
-				  }
-				]
-			  }
+			// {
+			// 	test: /\.(png|jpg|gif)$/,
+			// 	use: [
+			// 	  {
+			// 		loader: 'file-loader',
+			// 		options: {}
+			// 	  }
+			// 	]
+			//   }
 		]
 	},
 	plugins: [
@@ -55,7 +56,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin({
 			filename: 'styles.[hash].css'
-		})
+		}),
+		new CopyWebpackPlugin([
+            {from: 'src/img', to:'img'} 
+        ]), 
 	],
 	devtool: 'source-map',
 	devServer: {

@@ -1,4 +1,9 @@
+@import './../../node_modules/slick-carousel/slick/slick.scss';
+
+
+
 @import './base/normalize',
+        './base/functions',
         './base/variables',
         './base/layout',
         './base/typography',
@@ -6,5 +11,10 @@
 
 @import './partials/header',
         './partials/navbar',
-        './partials/hero';
+        './partials/navigation',
+        './partials/hero',
+        './partials/about',
+        './partials/testimonials',
+        './partials/social',
+        './partials/footer';
 

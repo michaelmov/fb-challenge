@@ -1,8 +1,10 @@
 .hero {
-    height: 100%;
+    height: auto;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    width: 100%;
 
     h1, h2 {
         text-align: center;

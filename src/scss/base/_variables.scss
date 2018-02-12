@@ -1,12 +1,26 @@
 
+
+/*** Font Variables ***/
 $base-font-family: 'Open Sans', sans-serif;
-$base-font-size: 18px;
+$base-font-size: 16px;
 
+/*** Layout Variables ***/
 $baseline-grid: 8px;
+$navbar-height: 87px;
+$container-max-width: 834px;
+$wide-container-max-width: 916px;
 
-/*** Colors ***/
+/*** Color Variables ***/
 $white: #ffffff;
 $black: #000000;
+$grey: #f1f1f1;
+$grey-dark: #464646;
 $blue: #69d2e7;
 $teal: #03f9ce;
 $coral: #f69679;
+
+/*** Breakpoints ***/
+$xs: 575px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;

@@ -1,5 +1,11 @@
 .header {
     height: 472px;
+    max-height: 472px;
+    position: relative;
     background-color: $blue;
     background-image: linear-gradient(45deg, $blue, $teal);
+    border-top: 5px solid $coral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }   

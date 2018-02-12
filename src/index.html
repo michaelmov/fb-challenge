@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FB Challenge</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
+    <!-- START: Navigation Overlay -->
+    <div class="navigation-overlay">
+        <div class="container">
+                <img class="hamburger" src="/img/toggle.png" srcset="/img/toggle.png 1x, /img/toggle@2x.png 2x" alt="Open Navigation">
+            <nav class="navigation-overlay__nav text-light">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Join Now</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>      
+    </div>
+    <!-- END: Navigation Overlay -->
+    <!-- START: Header -->
     <header class="header">
         <div class="navbar">
             <div class="container">
@@ -18,14 +34,141 @@
                         <span class="logo__tagline">Tag Line Goes Here</span>
                     </div>    
                 </a>
+                <img class="hamburger" src="/img/toggle.png" srcset="/img/toggle.png 1x, /img/toggle@2x.png 2x" alt="Open Navigation">
             </div>
         </div>
-        <section class="hero blade text-light">
+        <section class="hero text-light">
             <div class="container">
                 <h1>Hello</h1>
                 <h2>We are an Online Business</h2>
             </div>
         </section>
     </header>
+    <!-- END: Header -->
+    <!-- START: About -->
+    <section class="about blade">
+        <div class="container about__container-outset">
+            <div class="about__card">
+                <h3 class="about__card-title h2 text-bold">About Us</h3>        
+                <p class="about__card-paragraph text-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>        
+            </div>
+        </div>
+        <div class="container about__features">
+            <div class="about__feature">
+                <div class="about__feature-logo">
+                    <img src="/img/hive.png" srcset="/img/hive.png 1x, /img/hive@2x.png 2x" alt="Lorem ipsum dolor sit amet">
+                </div>
+                <p class="about__feature-description">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="about__feature">
+                <div class="about__feature-logo about__feature-logo--inverted ">
+                    <img src="/img/tool.png" srcset="/img/tool.png 1x, /img/tool@2x.png 2x" alt="Lorem ipsum dolor sit amet">
+                </div>
+                <p class="about__feature-description">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="about__feature">
+                <div class="about__feature-logo">
+                    <img src="/img/atom.png" srcset="/img/atom.png 1x, /img/atom@2x.png 2x" alt="Lorem ipsum dolor sit amet">
+                </div>
+                <p class="about__feature-description">Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </section>
+    <!-- END: About -->
+    <!-- START: Testimonials -->
+    <section class="testimonials blade text-light">
+        <div class="container testimonials__container">
+            <div class="testimonials__slider">
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-inner">
+                        <div class="testimonials__avatar">
+                            <img src="/img/avatar.png" srcset="/img/avatar.png 1x, /img/avatar@2x.png 2x" alt="Alice G. Mullins - General Physician">
+                        </div>
+                        <h4 class="testimonials__name">Alice G. Mullins</h4>
+                        <h5 class="testimonials__profession text-thin">General Physician</h5>
+                        <p class="testimonials__paragraph text-thin">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-inner">
+                        <div class="testimonials__avatar">
+                            <img src="/img/avatar.png" srcset="/img/avatar.png 1x, /img/avatar@2x.png 2x" alt="Alice G. Mullins - General Physician">
+                        </div>
+                        <h4 class="testimonials__name">Jane Doe</h4>
+                        <h5 class="testimonials__profession text-thin">Physical Therapist</h5>
+                        <p class="testimonials__paragraph text-thin">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-inner">
+                        <div class="testimonials__avatar">
+                            <img src="/img/avatar.png" srcset="/img/avatar.png 1x, /img/avatar@2x.png 2x" alt="Alice G. Mullins - General Physician">
+                        </div>
+                        <h4 class="testimonials__name">Jennifer Miller</h4>
+                        <h5 class="testimonials__profession text-thin">Dentist</h5>
+                        <p class="testimonials__paragraph text-thin">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="testimonials__nav">
+            <ul class="testimonials__nav__dots">
+            </ul>
+        </nav>
+    </section>
+    <!-- END: Testimonials -->
+    <!-- START: Social -->
+    <section class="social blade">
+        <div class="container social__container">
+            <div class="social__col-left">
+                <a href="/" class="logo">
+                    <div class="logo__image logo__image--alternate"></div>
+                    <div class="logo__text">
+                        <span class="logo__name">Company Name</span><br>
+                        <span class="logo__tagline">Tag Line Goes Here</span>
+                    </div>    
+                </a>
+                <ul class="social__media-links">
+                    <li><a href="#" target="blank"><img src="/img/facebook.png" srcset="/img/facebook.png 1x, /img/facebook@2x.png 2x" alt=""></a></li>
+                    <li><a href="#" target="blank"><img src="/img/twitter.png" srcset="/img/twitter.png 1x, /img/twitter@2x.png 2x" alt=""></a></li>
+                    <li><a href="#" target="blank"><img src="/img/pinterest.png" srcset="/img/pinterest.png 1x, /img/pinterest@2x.png 2x" alt=""></a></li>
+                    <li><a href="#" target="blank"><img src="/img/linkedin.png" srcset="/img/linkedin.png 1x, /img/linkedin@2x.png 2x" alt=""></a></li>
+                </ul>  
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+                </p>
+            </div>
+            <div class="social__col-right">
+                <img class="social__main" src="/img/nurse.png" alt="Nurse">
+            </div>
+        </div>
+    </section>
+    <!-- END: Social -->
+    <!-- START: Footer -->
+    <footer class="footer text-light text-thin">
+        <div class="contaier footer__container">
+            <ul class="footer__links">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy & cookies</a></li>
+            </ul>
+            <div class="footer__copyright">Copyright © 2017, All rights reserved.</div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
 </body>
 </html>

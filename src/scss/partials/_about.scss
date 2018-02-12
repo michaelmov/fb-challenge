@@ -1,0 +1,93 @@
+.about {
+    background-color: $grey;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__container-outset {
+        margin-top: -100px - ($baseline-grid*8);
+        z-index: 1;
+    }
+    &__card {
+        background-color: $white;
+        padding: $baseline-grid*5 $baseline-grid*4;
+        border-radius: 8px;
+        box-shadow: 0 0 30px lighten($black, 70%);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: $baseline-grid*8;
+
+        &-title {
+            width: 100%;
+            max-width: 383px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: $baseline-grid*2;
+            border-bottom: 1px solid lighten($black, 80%);
+        }
+
+        &-paragraph {
+            width: 100%;
+            font-size: 1.125rem;
+        }
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include breakpoint(0, $sm) {
+            justify-content: center;
+        }
+    }
+
+    &__feature {
+        position: relative;
+        max-width: 162px;
+        margin: 0 $baseline-grid*5;
+
+        &:first-child {
+            margin-left: 0;
+
+            @include breakpoint(0, $sm) {
+                margin-left: $baseline-grid*5;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            @include breakpoint(0, $sm) {
+                margin-right: $baseline-grid*5;
+            }
+        }
+
+        &-logo {
+            height: 162px;
+            width: 100%;
+            background-color: $white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+
+            &--inverted {
+                background-color: $blue;
+            }
+        }
+        &-description {
+            font-size: 1.125rem;
+            text-align: center;
+        }
+        img {
+            width: 92px;
+        }
+    }
+}

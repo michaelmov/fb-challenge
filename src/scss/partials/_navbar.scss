@@ -1,14 +1,30 @@
 .navbar {
     display: flex;
     justify-content: center;
-    height: 87px;
+    height: $navbar-height;
+    position: absolute;
+    width: 100%;
+    align-self: flex-start;
+    top: 0;
+
+    .logo__text {
+        @include breakpoint(0, $xs) {
+            display: none;
+        }
+    }
 
     .container {
-        max-width: 916px;
+        max-width: $wide-container-max-width;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
     }
 
+}
+
+.hamburger {
+    display: block;
+    height: 41px;
+    cursor: pointer;
 }
